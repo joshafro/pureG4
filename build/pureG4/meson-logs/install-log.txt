@@ -1,0 +1,17 @@
+# List of files installed by Meson
+# Does not contain files installed by custom scripts.
+/home/josh/medphys/pureG4/src/../install/pureG4/lib/libpureG4.so
+/home/josh/medphys/pureG4/src/../install/pureG4/bin/pureG4
+/home/josh/medphys/pureG4/src/../install/pureG4/include/ActionInitialization.hh
+/home/josh/medphys/pureG4/src/../install/pureG4/include/DetectorConstruction.hh
+/home/josh/medphys/pureG4/src/../install/pureG4/include/EventAction.hh
+/home/josh/medphys/pureG4/src/../install/pureG4/include/PrimaryGeneratorAction.hh
+/home/josh/medphys/pureG4/src/../install/pureG4/include/RunAction.hh
+/home/josh/medphys/pureG4/src/../install/pureG4/include/SteppingAction.hh
+/home/josh/medphys/pureG4/src/../install/pureG4/lib/pkgconfig/pureG4.pc
+/home/josh/medphys/pureG4/install/pureG4/lib/pkgconfig
+/home/josh/medphys/pureG4/install/pureG4/include
+/home/josh/medphys/pureG4/install/pureG4/bin
+/home/josh/medphys/pureG4/install/pureG4/lib
+/home/josh/medphys/pureG4/install/pureG4
+/home/josh/medphys/pureG4/install

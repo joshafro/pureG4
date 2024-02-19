@@ -1,0 +1,10 @@
+prefix=/home/josh/medphys/pureG4/build/pureG4
+includedir=${prefix}/include
+libdir=${prefix}/lib
+srcdir=/home/josh/medphys/pureG4/src
+
+Name: pureG4
+Description: Testing pure GEANT4 with maxy
+Version: v0.0.0
+Libs: -L${prefix} -lpureG4
+Cflags: -I${prefix} -I${srcdir} -I${prefix} -I${srcdir} -I/nix/store/nwfmazzgpa78yjk87fb8crd8v3y13b1v-geant4-11.0.4/include/Geant4 -I/nix/store/nwfmazzgpa78yjk87fb8crd8v3y13b1v-geant4-11.0.4/include/Geant4

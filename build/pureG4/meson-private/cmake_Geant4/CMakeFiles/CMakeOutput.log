@@ -1,0 +1,36 @@
+The system is: Linux - 6.1.0-1033-oem - x86_64
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/josh/medphys/pureG4/build/pureG4/meson-private/cmake_Geant4/CMakeFiles/CMakeScratch/TryCompile-xP4CGn
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8f64f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8f64f.dir/build.make CMakeFiles/cmTC_8f64f.dir/build
+gmake[1]: Entering directory '/home/josh/medphys/pureG4/build/pureG4/meson-private/cmake_Geant4/CMakeFiles/CMakeScratch/TryCompile-xP4CGn'
+Building CXX object CMakeFiles/cmTC_8f64f.dir/src.cxx.o
+/nix/store/a4smsbc3bl8mh64cdfbidhbccjwa5n8z-clang-wrapper-16.0.1/bin/clang++ -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_8f64f.dir/src.cxx.o -MF CMakeFiles/cmTC_8f64f.dir/src.cxx.o.d -o CMakeFiles/cmTC_8f64f.dir/src.cxx.o -c /home/josh/medphys/pureG4/build/pureG4/meson-private/cmake_Geant4/CMakeFiles/CMakeScratch/TryCompile-xP4CGn/src.cxx
+Linking CXX executable cmTC_8f64f
+/nix/store/fqfi0m3fw3szj3n99r5n359579808bh6-cmake-3.25.3/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8f64f.dir/link.txt --verbose=1
+/nix/store/a4smsbc3bl8mh64cdfbidhbccjwa5n8z-clang-wrapper-16.0.1/bin/clang++ CMakeFiles/cmTC_8f64f.dir/src.cxx.o -o cmTC_8f64f 
+gmake[1]: Leaving directory '/home/josh/medphys/pureG4/build/pureG4/meson-private/cmake_Geant4/CMakeFiles/CMakeScratch/TryCompile-xP4CGn'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+

@@ -1,0 +1,9 @@
+prefix=/home/josh/medphys/pureG4/src/../install/pureG4
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: pureG4
+Description: Testing pure GEANT4 with maxy
+Version: v0.0.0
+Libs: -L${libdir} -lpureG4
+Cflags: -I${includedir}
